@@ -147,7 +147,6 @@ nav {
 .heading {
     position: relative;
     text-align: center;
-    margin-bottom: 1em;
 
     &__back {
         display: block;
@@ -260,6 +259,7 @@ nav {
 }
 
 .comparison__wrp {
+    align-items: flex-start;
     display: flex;
 
     & > div {
@@ -336,6 +336,10 @@ nav {
 }
 
 .price {
+    h3 {
+        padding: 1em 0;
+    }
+
     .box {
         color: white;
         font-weight: bold;
@@ -346,6 +350,27 @@ nav {
             top: 1em;
             max-width: 11em;
         }
+
+        .sub {
+            white-space: nowrap;
+            position: relative;
+            top: 3em;
+            font-weight: normal;
+        }
+
+        .num {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    }
+
+    .total {
+        margin-right: 1em;
+        display: block;
+        text-align: right;
+        font-weight: bold;
+        font-size: 64px;
+        color: #0E4166;
     }
 }
 
@@ -367,5 +392,52 @@ nav {
 .box-sm {
     width: 48%;
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
+
+    .box__title {
+        padding-left: 1.4em;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        margin: .7em 0;
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    &__title {
+        margin-bottom: 1em;
+        font-size: 24px;
+    }
+
+    &__text {
+        line-height: 29px;
+        max-width: 50%;
+    }
+
+    .callback {
+        max-width: 17em;
+        text-align: center;
+    }
+
+    input[type="text"] {
+        font-family: 'Montserrat';
+        color: #828282;
+        padding: 0.4em 1em;
+        width: 19em;
+        margin: .7em 0;
+        font-size: 24px;
+        background: #FFFFFF;
+        border: 2px solid #0E4367;
+        box-sizing: border-box;
+        border-radius: 50px;
+    }
 }

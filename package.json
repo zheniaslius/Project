@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "lodash": "4.17.11",
-    "reset-css": "^4.0.1"
+    "reset-css": "^4.0.1",
+    "svg-url-loader": "^2.3.2"
   },
   "devDependencies": {
     "@babel/core": "7.1.2",

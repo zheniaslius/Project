@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 // Is the current build a development build
 const IS_DEV = (process.env.NODE_ENV === 'dev');
 
@@ -36,7 +36,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.join(__dirname, 'index.ejs'),
             title: appHtmlTitle
-        })
+        }),
+
+        new CopyWebpackPlugin([
+            { from: 'assets', to: 'assets' }
+          ]),
     ],
     module: {
         rules: [
@@ -98,13 +102,7 @@ module.exports = {
                 use: {
                     loader: 'svg-url-loader'
                 }
-            },
-            {
-                test: /\.(gif|png|jpe?g|svg)$/i,
-                use: {
-                    loader: 'image-webpack-loader',
-                }
-              }
+            }
         ]
     }
 };

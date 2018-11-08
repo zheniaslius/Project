@@ -98,7 +98,13 @@ module.exports = {
                 use: {
                     loader: 'svg-url-loader'
                 }
-            }
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                use: {
+                    loader: 'image-webpack-loader',
+                }
+              }
         ]
     }
 };

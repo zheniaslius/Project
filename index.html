@@ -20,11 +20,16 @@
                     <li class="menu__link"><a href="">О компании</a></li>
                     <li class="menu__link"><a href="">Контакты</a></li>
                 </ul>
+                <button class="hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
                 <button class="btn">Войти</button>
                 <span class="menu__lang">RU</span>
-            </div>
+            </div>      
         </nav>
-
+        
         <div class="hero">
             <span>Фулфилмент оператор полного цикла</span>
             <img src="assets/images/logo.svg" alt="">
@@ -324,57 +329,11 @@
                 <div class="comparison-right">
                     <div class="price">
                         <h3>Сравнение стоимости аренды склада</h3>
-                        <div class="box-bg box">
-                            <img class="box__bgr" src="assets/images/shapes/Polygon.svg" alt="">
-                            <span class="box__title">Затраты на аренду собственного  склада</span>
-                            <div class="box-md box">
-                                <img class="box__bgr" src="assets/images/shapes/Polygon-md.svg" alt="">
-                                <div class="box__title">
-                                    <span>Воспользоваться услугами других фулфилмент операторов</span>
-                                    <div class="sub">
-                                        <span>экономия в среднем</span><br>
-                                        <span class="num">30%</span>
-                                    </div>
-                                </div>
-                                <div class="box-sm box">
-                                    <img class="box__bgr" src="assets/images/shapes/Polygon-sm.svg" alt="">
-                                    <div class="box__title">
-                                        <span>Подключиться к Flypost</span>
-                                        <div class="sub">
-                                            <span>экономия</span><br>
-                                            <span class="num">41%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="assets/images/shapes/block1.svg" alt="">
                     </div>
                     <div class="price">
                         <h3>Сравнение стоимости упаковки товара</h3>
-                        <div class="box-bg box">
-                            <img class="box__bgr" src="assets/images/shapes/Polygon.svg" alt="">
-                            <span class="box__title">Затраты на найм фасовщика в штат</span>
-                            <div class="box-md box">
-                                <img class="box__bgr" src="assets/images/shapes/Polygon-md.svg" alt="">
-                                <div class="box__title">
-                                    <span>Воспользоваться услугами других фулфилмент операторов</span>
-                                    <div class="sub">
-                                        <span>экономия в среднем</span><br>
-                                        <span class="num">22%</span>
-                                    </div>
-                                </div>
-                                <div class="box-sm box">
-                                    <img class="box__bgr" src="assets/images/shapes/Polygon-sm.svg" alt="">
-                                    <div class="box__title">
-                                        <span>Подключиться к Flypost</span>
-                                        <div class="sub">
-                                            <span>экономия</span><br>
-                                            <span class="num">35%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="assets/images/shapes/block2.svg" alt="">
                         <h3>Итого экономия на хранении и упаковки товара:</h3>
                         <span class="total">38%</span>
                     </div>
@@ -384,44 +343,50 @@
     </section>
 
     <section class="join feature">
-        <div class="heading">
-            <span class="heading__back">Сотрудничество</span>
-            <span class="heading__front">Присоединяйтесь</span>
-        </div>
-        <div class="contact">
-            <span class="contact__title">Приглашаем к взаимовыгодному сотрудничеству.</span>
-            <p class="contact__text">Мы всегда учитываем потребности партнеров и готовы работать над новыми проектами для расширения бизнес возможностей. В работе мы, прежде всего, ценим качество и профессионализм, что позволяет нам оставаться востребованными среди клиентов с самыми разными потребностями.</p>
-            <h2>Остались вопросы?</h2>
-            <h4>Позвоните нам.</h4>
-            <h2>+7(012)345 67 89</h2>
-            <h4 class="callback">Или закажите обратный звонок, мы перезвоним.</h4>
-            <form action="">
-                <input class="phone" type="text" placeholder="Телефон">
-                <div class="checkbox">
-                    <input type="checkbox" id="cbx" style="display: none;">
-                    <label for="cbx" class="check">
-                    <svg width="18px" height="18px" viewBox="0 0 18 18">
-                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
-                        <polyline points="1 9 7 14 15 4"></polyline>
-                    </svg>
-                    </label>
-                    <label for="cbx" class="description">Оставляя заявку, вы соглашаетесь с политикой обработки персональных данных.</label>
-                </div>
-            </form>
+        <div class="container">
+            <div class="heading">
+                <span class="heading__back back-sm">Сотрудничество</span>
+                <span class="heading__front">Присоединяйтесь</span>
+            </div>
+            <div class="contact">
+                <span class="contact__title">Приглашаем к взаимовыгодному сотрудничеству.</span>
+                <p class="contact__text">Мы всегда учитываем потребности партнеров и готовы работать над новыми проектами для расширения бизнес возможностей. В работе мы, прежде всего, ценим качество и профессионализм, что позволяет нам оставаться востребованными среди клиентов с самыми разными потребностями.</p>
+                <h2>Остались вопросы?</h2>
+                <h4>Позвоните нам.</h4>
+                <h2>+7(012)345 67 89</h2>
+                <h4 class="callback">Или закажите обратный звонок, мы перезвоним.</h4>
+                <form action="">
+                    <input class="phone" type="text" placeholder="Телефон">
+                    <div class="checkbox">
+                        <input type="checkbox" id="cbx" style="display: none;">
+                        <label for="cbx" class="check">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                            <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                            <polyline points="1 9 7 14 15 4"></polyline>
+                        </svg>
+                        </label>
+                        <label for="cbx" class="description">Оставляя заявку, вы соглашаетесь с политикой обработки персональных данных.</label>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
     <footer class="footer">
         <img class="waves" src="assets/images/waves.svg" alt="waves">
         <button class="call btn-dark">Заказать звонок</button>
-        <ul class="links">
-            <li><a href="">Внутренняя страница</a></li>
-            <li><a href="">Внутренняя страница</a></li>
-            <li><a href="">Внутренняя страница</a></li>
-            <li><a href="">Внутренняя страница</a></li>
-            <li><a href="">Внутренняя страница</a></li>
-            <li><a href="">Внутренняя страница</a></li>
-        </ul>
+        <div class="links">
+            <ul>
+                <li><a href="">Внутренняя страница</a></li>
+                <li><a href="">Внутренняя страница</a></li>
+                <li><a href="">Внутренняя страница</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Внутренняя страница</a></li>
+                <li><a href="">Внутренняя страница</a></li>
+                <li><a href="">Внутренняя страница</a></li>
+            </ul>
+        </div>
         <div class="footer__bottom">
             <div class="social">
                 <span>Мы в соцсетях:</span>
@@ -432,6 +397,6 @@
             <img class="bottom__logo" src="assets/images/logo.svg" alt="">
         </div>
     </footer>
-<script type="text/javascript" src="vendor.6c18d740eeb11828230d.js"></script><script type="text/javascript" src="bundle.9632c3f615ab69e1e063.js"></script></body>
+<script type="text/javascript" src="vendor.6c18d740eeb11828230d.js"></script><script type="text/javascript" src="bundle.3cb5b34e4ccc9c3288cd.js"></script></body>
 
 </html>

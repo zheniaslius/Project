@@ -3,13 +3,115 @@
  */
 
 // Load application styles
+import anime from 'animejs';
+import inView from 'in-view';
+
 import 'reset-css';
 import 'styles/index.scss';
+import 'js/hamburger.js';
 
-const btn = document.querySelector('.hamburger');
-const links = document.querySelector('.menu__links');
+//Numbers animation
+const numVals = { packages: 0, size: 0, call: 0, clients: 0 };
 
-btn.addEventListener('click', () => {
-    btn.classList.toggle("is-active");
-    links.classList.toggle("links-visible");
+const numbersAnim = anime({
+    targets: numVals,
+    packages: 20000,
+    size: 1000,
+    call: 700,
+    clients: 400,
+    easing: 'easeOutCubic',
+    round: 1,
+    autoplay: false,
+    update: function() {
+        const nums = document.querySelectorAll('.results__wrp .number');
+        [...nums].map((num, i) => {
+            const key = Object.keys(numVals)[i];
+            num.innerText = (i == 0) ? numVals[key].toLocaleString('ru-RU') : numVals[key];
+        });
+    }
 })
+
+inView('.results__wrp')
+    .on('enter', () =>  numbersAnim.play());
+
+//Price comparison
+const price = anime.timeline({
+    easing: 'easeOutQuad',
+    autoplay: false
+}) 
+
+const totalPercentage = { total: '0%' };
+
+price
+    .add({
+        targets: document.querySelector('.price h3:first-of-type'),
+        opacity: [0, 1],
+    })
+    .add({
+        targets: document.querySelector('.price img'),
+        translateX: ['-50', 0],
+        opacity: [0, 1],
+        offset: 0
+    })
+    .add({
+        targets: document.querySelector('.price:last-of-type h3'),
+        opacity: [0, 1],
+    })
+    .add({
+        targets: document.querySelector('.price:last-of-type img'),
+        translateX: ['-50', 0],
+        opacity: [0, 1],
+        offset: '-=1000'
+    })
+    .add({
+        targets: document.querySelector('.price:last-of-type h3:last-of-type'),
+        opacity: [0, 1]
+    })
+    .add({
+        targets: document.querySelector('.price:last-of-type .total'),
+        opacity: [0, 1],
+        offset: '-=1000'
+    })
+    .add({
+        targets: totalPercentage,
+        total: '38%',
+        round: 1,
+        easing: 'easeOutCubic',
+        offset: '-=1000',
+        update: function() {
+            const percents = document.querySelector('.price .total');
+            percents.innerHTML = totalPercentage.total;
+        }
+    })
+
+inView('.comparison-right')
+    .on('enter', () =>  price.play());
+
+// Rocket launch
+const launch = anime.timeline({
+    easing: 'easeInCubic',
+    autoplay: false,
+    loop: false
+});
+const shuttle = document.querySelector('.shuttle.plane img:first-child');
+const smoke = document.querySelector('.shuttle.plane img:last-child');
+launch
+    .add({
+        targets: smoke,
+        translateY: '100px',
+        duration: 400,
+        opacity: 0,
+        offset: 0
+    })
+    .add({
+        targets: shuttle,
+        translateY: -300,
+        offset: 0
+    })
+    .add({
+        targets: shuttle,
+        opacity: 0,
+        offset: '-=1000'
+    })
+
+document.querySelector('.btn-join').onclick = launch.play;

@@ -48,6 +48,10 @@
 }
 
 @media screen and (max-width: 800px) {
+    .heading {
+        margin-bottom: 1em;
+    }
+
     .hero {
         max-width: 100%;
     }
@@ -71,9 +75,6 @@
 
     .hamburger {
         display: block;
-        position: absolute;
-        top: 0.7em;
-        left: 0.3em; 
         z-index: 20;
     }
 
@@ -105,11 +106,60 @@
         padding-bottom: 6em;
     }
 
-    nav {
-        flex-direction: column;
+    .header__map {
+        display: none;
+    }
 
-        .logo {
+    .hero {
+        img {
+            position: static;
+            width: 14em;
+            left: -1.8em;
+        }
+
+        hr {
+            position: static;
+            margin: 0.4em 0 1em;
+        }
+
+        &__capt {
+            font-size: 1em;
             margin-bottom: 1em;
+        }
+
+        .btn {
+            align-self: center;
+        }
+    }
+
+    .menu {
+        justify-content: space-between;
+        margin: 10% 12% 0;
+        width: 100%;
+
+        > * {
+            margin: 0;
+        }
+
+        .hamburger {
+            margin-left: -1em;
+        }
+    }
+
+    nav {
+        padding: 0;
+        .logo {
+            display: none;
+        }
+    }
+
+    .heading__back {
+        display: none;
+    }
+
+    .comparison-right {
+        &:first-child {
+            margin-bottom: 1.5em;
         }
     }
 
@@ -134,13 +184,5 @@
 
     .contact .checkbox {
         max-width: 90%;
-    }
-
-    .hero img {
-        width: 17em;
-    }
-
-    .hero__capt {
-        font-size: 1.6em;
     }
 }

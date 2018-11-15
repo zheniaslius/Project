@@ -34,6 +34,18 @@ const numbersAnim = anime({
 inView('.results__wrp')
     .on('enter', () =>  numbersAnim.play());
 
+// Icon animations
+
+// const icons = anime({
+//     targets: `.service__icon path:not([fill="white"]):nth-of-type(2)`,
+//     translateX: -10,
+//     direction: 'alternate',
+//     delay: function(el, i, l) {
+//         return i * 100;
+//     },
+//     loop: true
+// })
+
 //Price comparison
 const price = anime.timeline({
     easing: 'easeOutQuad',
@@ -93,25 +105,27 @@ const launch = anime.timeline({
     autoplay: false,
     loop: false
 });
+
 const shuttle = document.querySelector('.shuttle.plane img:first-child');
 const smoke = document.querySelector('.shuttle.plane img:last-child');
+
 launch
     .add({
         targets: smoke,
-        translateY: '100px',
-        duration: 400,
+        translateY: 100,
+        duration: 600,
         opacity: 0,
         offset: 0
     })
     .add({
         targets: shuttle,
-        translateY: -300,
+        translateY: -700,
         offset: 0
     })
     .add({
         targets: shuttle,
         opacity: 0,
-        offset: '-=1000'
+        offset: '-=600'
     })
 
 document.querySelector('.btn-join').onclick = launch.play;

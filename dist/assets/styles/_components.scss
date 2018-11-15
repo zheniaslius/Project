@@ -3,6 +3,16 @@
     font-size: 18px;
 }
 
+.btn {
+    position: relative;
+    transition: all .1s ease-in-out;
+
+    &:hover {
+        background-color: white; 
+        color: #1f7593; 
+    }
+}
+
 .back-sm {
     font-size: 5vw;
 }

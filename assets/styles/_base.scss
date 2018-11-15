@@ -29,11 +29,11 @@ nav {
         display: flex;
     }
 
-    & > *, &__link {
+    * {
         margin-right: 1em;
     }
 
-    &__link:last-of-type{
+    &__link:last-of-type, :last-child {
         margin-right: 0;
     }
 }
@@ -146,6 +146,10 @@ nav {
     flex-direction: column;
     align-items: center;
     max-width: 216px;
+
+    .icon {
+        height: 3em;
+    }
 
     .number {
         margin: 13px 0;

@@ -10,7 +10,16 @@ import 'reset-css';
 import 'styles/index.scss';
 import 'js/hamburger.js';
 
-//Numbers animation
+// Mouse animation
+// const numbersAnim = anime({
+//     targets: '.mouse rect',
+//     translateY: [
+//         { value: -10 },
+//         { value: 10 }
+//     ],
+// })
+
+// Numbers animation
 const numVals = { packages: 0, size: 0, call: 0, clients: 0 };
 
 const numbersAnim = anime({
@@ -92,7 +101,7 @@ price
         offset: '-=1000',
         update: function() {
             const percents = document.querySelector('.price .total');
-            percents.innerHTML = totalPercentage.total;
+            percents.innerText = totalPercentage.total;
         }
     })
 

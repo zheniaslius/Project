@@ -1,6 +1,11 @@
 @media screen and (max-width: 1900px) {
+    .hero {
+        width: 22em;
+    }
+
     .hero .btn {
         align-self: center;
+        margin-left: -5em;
     }
 }
 
@@ -26,6 +31,11 @@
 
     nav {
         display: flex;
+        padding: 0;
+
+        .logo {
+            display: none;
+        }
     }
     
     .hamburger {
@@ -35,6 +45,30 @@
 
     .menu {
         padding-right: 0;
+        justify-content: space-between;
+        margin: 10% 12% 0;
+        width: 100%;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &__lang {
+            margin-right: 1em;
+        }
+
+        .hamburger {
+            margin-left: -1em;
+        }
+
+        .btn {
+            order: 2;
+        }
+    }
+
+    .enter-container {
+        display: flex;
+        align-items: center;
     }
 
     .menu__links {
@@ -68,7 +102,7 @@
     }
 
     .links-visible {
-        padding: 7em 4em 0 1.6em;
+        padding: 7em 4em 0 12.9%;
         background: white;
         transform: translate(0, 0);
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -87,14 +121,14 @@
     .footer__bottom {
         flex-direction: column-reverse;
         align-items: center;
+
+        > * {
+            margin-bottom: 1em;
+        }
     }
 
-    .footer {
-        .links {
-            max-width: 100%;
-            justify-content: center;
-            margin: 2em 0 4em;
-        }
+    .footer__logo {
+        display: none;
     }
 }
 
@@ -117,6 +151,7 @@
     }
 
     .hero {
+        max-width: 77%;
         img {
             position: static;
             width: 14em;
@@ -135,31 +170,7 @@
 
         .btn {
             align-self: center;
-        }
-    }
-
-    .menu {
-        justify-content: space-between;
-        margin: 10% 12% 0;
-        width: 100%;
-
-        > * {
             margin: 0;
-        }
-
-        .hamburger {
-            margin-left: -1em;
-        }
-
-        .btn {
-            order: 3;
-        }
-    }
-
-    nav {
-        padding: 0;
-        .logo {
-            display: none;
         }
     }
 
@@ -208,5 +219,10 @@
         &__text {
             text-align: center;
         }
+    }
+
+    .footer__bottom {
+        padding-top: 2em;
+        padding-bottom: 4em;
     }
 }

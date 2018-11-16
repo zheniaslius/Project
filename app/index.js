@@ -11,13 +11,14 @@ import 'styles/index.scss';
 import 'js/hamburger.js';
 
 // Mouse animation
-// const numbersAnim = anime({
-//     targets: '.mouse rect',
-//     translateY: [
-//         { value: -10 },
-//         { value: 10 }
-//     ],
-// })
+const mouse = anime({
+    targets: '.mouse svg rect',
+    translateY: [
+        { value: 4 },
+    ],
+    direction: 'alternate',
+    loop: true
+})
 
 // Numbers animation
 const numVals = { packages: 0, size: 0, call: 0, clients: 0 };
@@ -43,17 +44,6 @@ const numbersAnim = anime({
 inView('.results__wrp')
     .on('enter', () =>  numbersAnim.play());
 
-// Icon animations
-
-// const icons = anime({
-//     targets: `.service__icon path:not([fill="white"]):nth-of-type(2)`,
-//     translateX: -10,
-//     direction: 'alternate',
-//     delay: function(el, i, l) {
-//         return i * 100;
-//     },
-//     loop: true
-// })
 
 //Price comparison
 const price = anime.timeline({

@@ -33,7 +33,7 @@ nav {
         margin-right: 1em;
     }
 
-    &__link:last-of-type, :last-child {
+    &__link:last-of-type, &:last-child {
         margin-right: 0;
     }
 }
@@ -329,6 +329,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
     h2 {
         margin: .7em 0;
@@ -395,6 +396,7 @@ nav {
 }
 
 .footer {
+    font-family: 'Roboto';
     color: white;
     position: relative;
     margin-top: 3em;
@@ -415,24 +417,41 @@ nav {
         border: 10px solid white;
     }
 
-    .links {
-        margin: 0 0 6em 13em;
-        max-width: 30em;
+    &__logo-wrp {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        
-        li {
-            padding: .5em;
-        }
+        justify-content: center;
+    }
+
+    &__logo {
+        position: relative;
+        top: -14vw;
+        width: 15em;
     }
 
     &__bottom {
         display: flex;
         justify-content: space-between;
-        max-width: 85%;
+        max-width: 73%;
         margin: 0 auto;
-        padding-bottom: 2em;
+        padding-bottom: 6em;
+    }
+
+    &__copyr {
+        color: rgba(255, 255, 255, 0.45);
+        font-weight: 500;
+        font-size: 18px;
+        span {
+            color: white;
+        }
+    }
+
+    &__langs {
+        font-size: 24px;
+        font-weight: bold;
+        :last-child {
+            font-weight: normal;
+            margin-left: 1em;
+        }
     }
 
     .social {
@@ -447,10 +466,20 @@ nav {
             padding: 0;
         }
     }
-    
-    .bottom__logo {
-        position: relative;
-        top: -1em;
-        height: 3em;
+
+}
+
+.footer-links {
+    background-color: #1E4164;
+    padding: 2em 0;
+    font-size: 14px;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    li {
+        padding: 1em;
     }
 }

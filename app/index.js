@@ -5,10 +5,17 @@
 // Load application styles
 import anime from 'animejs';
 import inView from 'in-view';
+import SmoothScroll from 'smooth-scroll';
 
 import 'reset-css';
 import 'styles/index.scss';
 import 'js/hamburger.js';
+
+//Scroll
+const scroll = new SmoothScroll('a[href*="#join"]', {
+    speed: 1600
+});
+
 
 // Mouse animation
 const mouse = anime({

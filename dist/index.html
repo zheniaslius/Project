@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <title>FlyPost</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
             <div class="menu">
                 <ul class="menu__links">
                     <li class="menu__link"><a href="">Главная</a></li>
-                    <li class="menu__link"><a href="">Услуги</a></li>
+                    <li class="menu__link"><a href="/services.html">Услуги</a></li>
                     <li class="menu__link"><a href="">Тарифы</a></li>
                     <li class="menu__link"><a href="">О компании</a></li>
                     <li class="menu__link"><a href="">Контакты</a></li>
@@ -25,8 +26,10 @@
                         <span class="hamburger-inner"></span>
                     </span>
                 </button>
-                <button class="btn">Войти</button>
-                <span class="menu__lang">RU</span>
+                <div class="enter-container">
+                    <button class="btn">Войти</button>
+                    <span class="menu__lang">RU</span>
+                </div>
             </div>      
         </nav>
         
@@ -69,7 +72,7 @@
                 </div>
                 <div class="results__card">
                     <img src="assets/images/icons/house.svg" alt="house" class="icon">
-                    <span class="number">0 м2</span>
+                    <span class="number">0</span>
                     <span class="desc">Площадь складов</span>
                 </div>
                 <div class="results__card">
@@ -292,15 +295,15 @@
                             <img class="plane" src="assets/images/planes/Plane starter.png" alt="">
                             <h3>Самостоятельно</h3>
                             <ul>
-                                <li><img src="assets/images/emoji/Rectangle 19.6.svg" alt="">
+                                <li><img src="assets/images/emoji/Frame-1.svg" alt="">
                                     Аренда склада</li>
-                                <li><img src="assets/images/emoji/Rectangle 19.7.svg" alt="">
+                                <li><img src="assets/images/emoji/Frame-2.svg" alt="">
                                     Зарплата и обучение сотрудников</li>
-                                <li><img src="assets/images/emoji/Rectangle 19.8.svg" alt="">
+                                <li><img src="assets/images/emoji/Frame-3.svg" alt="">
                                     Покупка и ремонт оборудования</li>
-                                <li><img src="assets/images/emoji/Rectangle 19.9.svg" alt="">
+                                <li><img src="assets/images/emoji/Frame-4.svg" alt="">
                                     Оплата налогов</li>
-                                <li><img src="assets/images/emoji/Rectangle 19.10.svg" alt="">
+                                <li><img src="assets/images/emoji/Frame-5.svg" alt="">
                                     Отсутствие времени</li>
                             </ul>
                         </div>
@@ -311,18 +314,18 @@
                             </div>
                             <img class="points__logo" src="assets/images/logo_dark.svg" alt="logo">
                             <ul>
-                                <li><img src="assets/images/emoji/Rectangle 19.11.svg" alt="">
+                                <li><img src="assets/images/emoji/Frame.svg" alt="">
                                     Снижение расходов</li>
-                                <li><img src="assets/images/emoji/Rectangle 19.12.svg" alt="">
+                                <li><img src="assets/images/emoji/Group.svg" alt="">
                                     Скорость обработки отправлений</li>
-                                <li><img src="assets/images/emoji/Rectangle 19.13.svg" alt="">
+                                <li><img src="assets/images/emoji/Frame-6.svg" alt="">
                                     Повышение конверсии</li>
-                                <li><img src="assets/images/emoji/Rectangle 19.14.svg" alt="">
+                                <li><img src="assets/images/emoji/Frame-7.svg" alt="">
                                     Продвинутый личный кабинет</li>
-                                <li><img src="assets/images/emoji/Rectangle 19.15.svg" alt="">
+                                <li><img src="assets/images/emoji/Frame-8.svg" alt="">
                                     Экономия времени</li>
                             </ul>
-                            <button class="btn-dark btn-join">Подключиться</button>
+                            <a href="#join"><button class="btn-dark btn-join" data-scroll>Подключиться</button></a>
                         </div>
                     </div>
                 </div>
@@ -342,7 +345,7 @@
         </div>
     </section>
 
-    <section class="join feature">
+    <section class="join feature" id="join">
         <div class="container">
             <div class="heading">
                 <span class="heading__back back-sm">Сотрудничество</span>
@@ -375,28 +378,33 @@
     <footer class="footer">
         <img class="waves" src="assets/images/waves.png" alt="waves">
         <button class="call btn-dark">Заказать звонок</button>
-        <div class="links">
-            <ul>
-                <li><a href="">Внутренняя страница</a></li>
-                <li><a href="">Внутренняя страница</a></li>
-                <li><a href="">Внутренняя страница</a></li>
-            </ul>
-            <ul>
-                <li><a href="">Внутренняя страница</a></li>
-                <li><a href="">Внутренняя страница</a></li>
-                <li><a href="">Внутренняя страница</a></li>
-            </ul>
+        <div class="footer__logo-wrp">
+            <img class="footer__logo" src="assets/images/logo.svg" alt="logo">
         </div>
         <div class="footer__bottom">
-            <div class="social">
-                <span>Мы в соцсетях:</span>
-                <a href="#"><img src="assets/images/icons/Rectangle 22.svg" alt=""></a>
-                <a href="#"><img src="assets/images/icons/Rectangle 22.1.svg" alt=""></a>
-                <a href="#"><img src="assets/images/icons/Rectangle 22.2.svg" alt=""></a>
+            <div class="footer__copyr">©2018 <span>FlyPOST</span></div>
+            <div class="footer__langs">
+                <span><a href="">RU</a></span>
+                <span><a href="">EN</a></span>
             </div>
-            <img class="bottom__logo" src="assets/images/logo.svg" alt="">
+            <div class="social">
+                <a href="#"><img src="assets/images/icons/Framesocial.svg" alt=""></a>
+                <a href="#"><img src="assets/images/icons/Framesocial-1.svg" alt=""></a>
+                <a href="#"><img src="assets/images/icons/Framesocial-2.svg" alt=""></a>
+            </div>
         </div>
     </footer>
-<script type="text/javascript" src="vendor.a590f801a2d82251f8f6.js"></script><script type="text/javascript" src="bundle.ec994153ec63868dd3ed.js"></script></body>
+
+    <section class="footer-links">
+        <ul>
+            <li><a href="">Внутренняя страница</a></li>
+            <li><a href="">Внутренняя страница</a></li>
+            <li><a href="">Внутренняя страница</a></li>
+            <li><a href="">Внутренняя страница</a></li>
+            <li><a href="">Внутренняя страница</a></li>
+            <li><a href="">Внутренняя страница</a></li>
+        </ul>
+    </section>
+<script type="text/javascript" src="vendor.49e0bae373188b3458d8.js"></script><script type="text/javascript" src="bundle.dfa2f6d5baf0dddf9d0c.js"></script></body>
 
 </html>

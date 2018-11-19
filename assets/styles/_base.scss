@@ -5,6 +5,17 @@ header {
     position: relative;
 }
 
+header.dark {
+    color: #0E4367;
+    a, button {
+        color: #0E4367;
+    }
+
+    button {
+        border-color: #0E4367;
+    }
+}
+
 nav {
     display: flex;
     justify-content: space-between;

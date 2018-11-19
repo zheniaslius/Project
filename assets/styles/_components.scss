@@ -1,16 +1,23 @@
 .btn-dark {
     background: #0E4367;
     font-size: 18px;
+    color: white;
 }
 
 .btn {
     position: relative;
     transition: all .1s ease-in-out;
+    color: white;
+    border: 2px solid #FFFFFF;
 
     &:hover {
         background-color: white; 
         color: #1f7593; 
     }
+}
+
+.link-active > a {
+    color: #B0C1CD !important; 
 }
 
 .back-sm {

@@ -1,0 +1,83 @@
+header {
+    background: #fff;
+    height: auto;
+}
+
+.heading {
+    margin: 0 auto;
+    max-width: 40%;
+
+    &__front {
+        top: -6.6vw;
+    }
+
+    &__text {
+        text-align: left;
+        margin-top: -3em;
+        font-weight: 500;
+        line-height: 20px;
+        font-size: 14px;
+    }
+}
+
+.feature {
+    &__img {
+        width: 62%;
+        display: block;
+        margin: 2em auto;
+    }
+}
+
+.icons-wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.feature-icons {
+    padding: 2em 0;
+    background: url('../images/services/fullfilment/фон.svg') no-repeat;
+    background-size: cover;
+}
+
+.icons-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(321px, 1fr));
+    grid-row-gap: 1em;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__image {
+        height: 4em;
+        margin-bottom: .5em;
+    }
+
+    &__desc {
+        text-align: center;
+        color: white;
+    }
+}
+
+.arrow-next {
+    transform: rotateY(180deg);
+}
+
+.feature-carousel {
+    display: flex;
+    justify-content: space-around;
+    margin: 3em 0 5em;
+
+    img {
+        cursor: pointer;
+    }
+
+    .primary {
+        font-size: 18px;
+    }
+
+    .secondary {
+        color: #828282;
+    }
+}

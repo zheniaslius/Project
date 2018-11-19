@@ -16,10 +16,8 @@ const appHtmlTitle = 'FlyPost';
  */
 module.exports = {
     entry: {
-        vendor: [
-            'lodash'
-        ],
-        bundle: path.join(dirApp, 'index')
+        index: path.join(dirApp, 'index'),
+        service: path.join(__dirname, 'assets/services/services.js')
     },
     resolve: {
         modules: [
@@ -34,19 +32,23 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'index.ejs'),
-            title: appHtmlTitle
+            template: './index.html',
+            inject: true,
+            filename: 'index.html',
+            chunks: ['index']
         }),
 
         new HtmlWebpackPlugin({
-            template: 'services.html',
+            template: './assets/services/services.html',
             filename: './services.html',
-            title: 'Services'
+            inject: true,
+            title: 'Services',
+            chunks: ['service']
         }),
 
         new CopyWebpackPlugin([
             { from: 'assets/images', to: 'assets/images' }
-          ]),
+        ]),
     ],
     module: {
         rules: [

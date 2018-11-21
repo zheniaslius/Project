@@ -54,6 +54,16 @@ body > section:nth-of-type(1) {
     grid-row-gap: 1em;
 }
 
+.icons-wrapper--inline {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .icon {
+        padding: 0 3em;
+    }
+}
+
 .icon {
     display: flex;
     flex-direction: column;
@@ -74,7 +84,7 @@ body > section:nth-of-type(1) {
 }
 
 .feature-carousel {
-    margin: 3em 0 5em;
+    margin: 3em 0;
 
     img {
         cursor: pointer;
@@ -100,5 +110,16 @@ body > section:nth-of-type(1) {
 
 .glide__slide--active {
     color: black;
-    font-size: 18px;
+    transform: scale(1.05);
+    transition: transform .1s ease-out;
+}
+
+.glide__controls {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-54%, -30%);
+    button:first-of-type {
+        margin-right: 34em;
+    }
 }

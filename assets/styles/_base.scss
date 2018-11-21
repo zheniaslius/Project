@@ -13,6 +13,10 @@ header.dark {
 
     button {
         border-color: #0E4367;
+        &:hover {
+            background-color: #0E4367;
+            color: white;
+        }
     }
 }
 
@@ -102,6 +106,7 @@ nav {
     position: absolute;
     display: flex;
     flex-direction: column;
+    pointer-events: none;
 
     .waves {
         width: 100%;
@@ -284,7 +289,7 @@ nav {
 
         h3 {
             text-align: center;
-            margin-bottom: 18px;
+            margin-bottom: 2em;
         }
 
         li {
@@ -297,10 +302,10 @@ nav {
         }
 
         &__logo {
-            height: 3em;
+            height: 2.7em;
             display: block;
             margin: -1em auto;
-            margin-bottom: 15px;
+            margin-bottom: 2em;
         }
     }
 
@@ -360,6 +365,7 @@ nav {
     &__text {
         line-height: 29px;
         max-width: 50%;
+        font-size: 20px;
     }
 
     .callback {
@@ -493,5 +499,7 @@ nav {
 
     li {
         padding: 1em;
+        flex: 10em;
+        text-align: center;
     }
 }

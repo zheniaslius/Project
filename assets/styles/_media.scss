@@ -99,6 +99,14 @@
 
     .hero {
         max-width: 100%;
+
+        img {
+            padding: 1em 0;
+        }
+
+        hr {
+            display: none;
+        }
     }
 
     .links-visible {
@@ -156,11 +164,6 @@
             position: static;
             width: 14em;
             left: -1.8em;
-        }
-
-        hr {
-            position: static;
-            margin: 0.4em 0 1em;
         }
 
         &__capt {

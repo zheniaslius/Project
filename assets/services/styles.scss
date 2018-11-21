@@ -1,3 +1,5 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
 header {
     background: #fff;
     height: auto;
@@ -5,7 +7,7 @@ header {
 
 .heading {
     margin: 0 auto;
-    max-width: 40%;
+    max-width: 50%;
 
     &__front {
         top: -6.6vw;
@@ -20,9 +22,16 @@ header {
     }
 }
 
+.feature-desc {
+    display: none;
+}
+
+body > section:nth-of-type(1) {
+    display: block;
+}
+
 .feature {
     &__img {
-        width: 62%;
         display: block;
         margin: 2em auto;
     }
@@ -65,19 +74,31 @@ header {
 }
 
 .feature-carousel {
-    display: flex;
-    justify-content: space-around;
     margin: 3em 0 5em;
 
     img {
         cursor: pointer;
     }
 
-    .primary {
-        font-size: 18px;
+    .arrow-prev {
+        order: 2;
+    }
+
+    .arrow-next {
+        order: 4;
     }
 
     .secondary {
         color: #828282;
     }
+}
+
+.glide__slide {
+    text-align: center;
+    color: #828282;
+}
+
+.glide__slide--active {
+    color: black;
+    font-size: 18px;
 }

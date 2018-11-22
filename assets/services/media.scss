@@ -1,0 +1,50 @@
+$hamburger-layer-color: #0E4367 !default;
+
+@media screen and (max-width: 1100px) {
+    .icons-wrapper {
+        grid-template-columns: repeat(auto-fill, 17em);
+    }
+
+    .menu {
+        margin-top: 4%;
+    }
+
+    .heading {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .glide__controls {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+
+    .icons-wrapper {
+        grid-template-columns: repeat(auto-fill, 11em);
+    } 
+    .icon__image {
+        height: 3em;
+    }
+
+    .icon__desc {
+        font-size: 14px;
+    }
+
+    .heading {
+        max-width: 90%;
+
+        &__text {
+            margin-top: 0;
+        }
+    }
+
+    .feature__img {
+        width: 100%;
+    }
+
+    .glide__slide {
+        padding: 0 1em;
+    }
+}

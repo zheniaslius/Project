@@ -1,3 +1,5 @@
+$dark-blue: #0E4367;
+
 header {
     height: 95vh;
     background: linear-gradient(180deg, #001741 0%, #2FA9C0 100%);
@@ -6,15 +8,15 @@ header {
 }
 
 header.dark {
-    color: #0E4367;
-    a, button {
-        color: #0E4367;
+    color: $dark-blue;
+    a, .btn {
+        color: $dark-blue;
     }
 
-    button {
-        border-color: #0E4367;
+    .btn {
+        border-color: $dark-blue;
         &:hover {
-            background-color: #0E4367;
+            background-color: $dark-blue;
             color: white;
         }
     }
@@ -101,7 +103,7 @@ nav {
 .header__waves {
     z-index: 5;
     width: 100%;
-    bottom: -5px;
+    bottom: -8px;
     left: 0;
     position: absolute;
     display: flex;

@@ -11,6 +11,8 @@ header {
 
 .links-visible {
     height: unset;
+    padding: 7em 4em 12.9%;
+    box-shadow: 11px 10px 66px -30px #060608;
 }
 
 .heading {
@@ -79,6 +81,7 @@ body > section:nth-of-type(1) {
 .icons-wrapper--inline {
     max-width: 80%;
     display: flex;
+    margin: 0 auto;
     justify-content: center;
 
     .icon {

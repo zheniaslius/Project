@@ -17,7 +17,8 @@ const appHtmlTitle = 'FlyPost';
 module.exports = {
     entry: {
         index: path.join(dirApp, 'index'),
-        service: path.join(__dirname, 'assets/services/services.js')
+        service: path.join(__dirname, 'assets/services/services.js'),
+        tarifs: path.join(__dirname, 'assets/tarifs/tarifs.js')
     },
     resolve: {
         modules: [
@@ -44,6 +45,14 @@ module.exports = {
             inject: true,
             title: 'Services',
             chunks: ['service']
+        }),
+        
+        new HtmlWebpackPlugin({
+            template: './assets/tarifs/tarifs.html',
+            filename: './tarifs.html',
+            inject: true,
+            title: 'Tarifs',
+            chunks: ['tarifs']
         }),
 
         new CopyWebpackPlugin([

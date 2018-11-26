@@ -1,0 +1,21 @@
+@media screen and (max-width: 600px) {
+    .heading {
+        max-width: unset;
+    }
+
+    .calc__forms .input--short {
+        margin: 0 .5em 1em 0;
+    }
+
+    .input-group {
+        align-items: flex-start;
+    }
+
+    .tarifs {
+        flex-direction: column;
+
+        &__nav {
+            margin: 0;
+        }
+    }
+}

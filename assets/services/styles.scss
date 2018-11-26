@@ -76,16 +76,20 @@ body > section:nth-of-type(1) {
     grid-template-columns: repeat(3, 20em);
     grid-row-gap: 2em;
     justify-content: center;
+    align-items: center;
+    height: 18em;
 }
 
 .icons-wrapper--inline {
     max-width: 80%;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
 
     .icon {
-        padding: 0 3em;
+        flex: 10em;
+        padding: 1em 3em;
     }
 }
 

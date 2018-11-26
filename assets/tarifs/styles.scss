@@ -20,6 +20,7 @@ h1 {
 
     .btn-dark {
         border-radius: 20px;
+        margin-top: 1em;
     }
 
     .container > div {
@@ -30,6 +31,7 @@ h1 {
 .calc__forms {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .btn-dark {
         align-self: flex-end;
@@ -73,6 +75,7 @@ h1 {
 .calc__total {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .input-group:nth-child(2),
     .input-group:nth-child(3) {
@@ -110,6 +113,8 @@ h1 {
 .nav__wrp {
     .nav__tab {
         padding: 1em 1.5em;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
     }
 
     .tab--active {
@@ -121,6 +126,11 @@ h1 {
 .tarifs__table {
     display: flex;
     flex: 1;
+    display: none;
+
+    &:nth-of-type(2) {
+        display: flex;
+    }
 
     .table__col {
         margin-right: 1.6em;
@@ -132,7 +142,7 @@ h1 {
             flex: 1;
             text-align: center;
         }
-        &:last-child {
+        &:last-of-type {
             margin-right: 0;
         }
     }
@@ -176,6 +186,11 @@ h1 {
         background-color: #0E4367;
         color: white;
     }
+}
+
+.btn-wrp {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .download {

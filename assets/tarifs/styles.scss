@@ -53,9 +53,8 @@ h1 {
 }
 
 .input--short {
-    padding: 1em;
+    padding: 1.5em 1em;
     border-radius: 19px;
-    height: 58px;
 
     &::placeholder {
         color: #B9C8D3;
@@ -197,4 +196,63 @@ h1 {
     align-self: flex-end;
     border-radius: 19px;
     font-size: 20px;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 50%;
+    height: 95%;
+    transform: translate(-50%, -50%);
+    padding: 2em 115px;
+
+    &__info {
+        margin-top: -3em;
+        font-size: 24px;
+    }
+
+    & > * {
+        margin-bottom: 3em;
+    }
+
+    .checkbox__wrp {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto 3em;
+
+        label {
+            margin-left: .5em;
+        }
+
+        & > div {
+            margin-bottom: 1em;
+        }
+    }
+    
+    .input--short::placeholder {
+        font-size: 1em;
+    }
+
+    input.comment {
+        height: 17em;
+    }
+
+    button {
+        margin: 0 auto;
+    }
 }

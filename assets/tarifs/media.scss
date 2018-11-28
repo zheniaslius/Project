@@ -15,7 +15,19 @@
         flex-direction: column;
 
         &__nav {
-            margin: 0;
+            margin: 0 0 1em 0;
+        }
+    }
+
+    .tarifs__table .table__col {
+        margin-right: 0.6em;
+    }
+
+    .table__col:first-of-type {
+        overflow: scroll;
+
+        .col {
+            width: max-content;
         }
     }
 }

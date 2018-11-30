@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
+</head>
+
+<body>
+    <header class="dark">
+        <nav>
+            <img class="logo" src="assets/images/logo-dark.svg" alt="logo">
+            <div class="menu">
+                <ul class="menu__links">
+                    <li class="menu__link"><a href="/">Главная</a></li>
+                    <li class="menu__link"><a href="services.html">Услуги</a></li>
+                    <li class="menu__link"><a href="tarifs.html">Тарифы</a></li>
+                    <li class="menu__link"><a href="about.html">О компании</a></li>
+                    <li class="menu__link link-active"><a href="#">Контакты</a></li>
+                </ul>
+                <button class="hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <div class="enter-container">
+                    <button class="btn">Войти</button>
+                    <span class="menu__lang">RU</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="feature-desc">
+        <div class="container">
+            <div class="heading">
+                <span class="heading__back">Контакты</span>
+                <span class="heading__front">Наши офисы</span>
+                <p class="heading__text">Представительства Flypost расположены в 19 странах мира,. Это позволяет нам
+                    сосредоточиться на эффективной поддержке наших проектов с учетом особенностей региона.
+                    Профессиональный персонал представительств в работе учитывает все региональные требования.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="offices">
+            <div class="offices__card drop-shadow">
+                <div class="card__top">
+                    <svg width="35" height="25" viewBox="0 0 35 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.849121" width="33.2383" height="8.33334" fill="#F5F1F1"/>
+                        <rect x="0.849121" y="8.33334" width="33.2383" height="8.33334" fill="#2F80ED"/>
+                        <rect x="0.849121" y="16.6667" width="33.2383" height="8.33334" fill="#EB5757"/>
+                    </svg>
+                    <span class="card__country">Россия</span>
+                </div>
+                <span class="card__location">Москва, Мира 54,  индекс: 345333</span>
+                <span class="card__number">телефон: +7(012)345 67 89</span>
+                <span class="card__email">email: aqwerty@yandex.ru</span>
+            </div>
+            <div class="offices__card">
+                <div class="card__top">
+                    <svg width="34" height="25" viewBox="0 0 34 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.104004" width="33.2383" height="8.33334" fill="#333333"/>
+                        <rect x="0.104004" y="8.33334" width="33.2383" height="8.33334" fill="#EB5757"/>
+                        <rect x="0.104004" y="16.6667" width="33.2383" height="8.33334" fill="#F2C94C"/>
+                    </svg>
+                    <span class="card__country">Германия</span>
+                </div>
+                <span>Мюнхен, Гётештрассе 23,  индекс: 345333</span>
+                <span>телефон: +7(012)345 67 89</span>
+                <span>email: aqwerty@yandex.ru</span>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <div class="contact">
+            <h2>Остались вопросы?</h2>
+            <h4>Позвоните нам.</h4>
+            <h2>+7(012)345 67 89</h2>
+            <h4 class="callback">Или закажите обратный звонок, мы перезвоним.</h4>
+            <form action="">
+                <input class="phone" type="text" placeholder="Телефон">
+                <div class="checkbox">
+                    <input type="checkbox" id="cbx" style="display: none;">
+                    <label for="cbx" class="check">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                            <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                            <polyline points="1 9 7 14 15 4"></polyline>
+                        </svg>
+                    </label>
+                    <label for="cbx" class="description">Оставляя заявку, вы соглашаетесь с политикой обработки
+                        персональных данных.</label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <img class="waves" src="assets/images/waves.png" alt="waves">
+        <button class="call btn-dark">Заказать звонок</button>
+        <div class="footer__logo-wrp">
+            <img class="footer__logo" src="assets/images/logo.svg" alt="logo">
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__copyr">©2018 <span>FlyPOST</span></div>
+            <div class="footer__langs">
+                <span><a href="">RU</a></span>
+                <span><a href="">EN</a></span>
+            </div>
+            <div class="social">
+                <a href="#"><img src="assets/images/icons/Framesocial.svg" alt=""></a>
+                <a href="#"><img src="assets/images/icons/Framesocial-1.svg" alt=""></a>
+                <a href="#"><img src="assets/images/icons/Framesocial-2.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <section class="footer-links">
+        <ul>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="tarifs.html">Тарифы</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </section>
+</body>
+
+</html>

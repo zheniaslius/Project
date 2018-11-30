@@ -1,0 +1,12 @@
+.heading {
+    max-width: unset;
+
+    &__text {
+        max-width: 50%;
+        margin: 0 auto 5em;
+    }
+}
+
+.feature-desc {
+    margin-bottom: 5em;
+}

@@ -17,10 +17,10 @@
             <div class="menu">
                 <ul class="menu__links">
                     <li class="menu__link"><a href="/">Главная</a></li>
-                    <li class="menu__link"><a href="/services.html">Услуги</a></li>
+                    <li class="menu__link"><a href="services.html">Услуги</a></li>
                     <li class="menu__link link-active"><a href="#">Тарифы</a></li>
-                    <li class="menu__link"><a href="">О компании</a></li>
-                    <li class="menu__link"><a href="">Контакты</a></li>
+                    <li class="menu__link"><a href="about.html">О компании</a></li>
+                    <li class="menu__link"><a href="contacts.html">Контакты</a></li>
                 </ul>
                 <button class="hamburger hamburger--squeeze" type="button">
                     <span class="hamburger-box">
@@ -93,7 +93,7 @@
                     <div class="input--short__wrp">
                         <div class="input--short blue-rounded">200 рублей</div>
                         <div class="input--short blue-rounded">500 рублей</div>
-                        <button class="btn-dark">Получить подробную консультацию</button>
+                        <button class="btn-dark get-info">Получить подробную консультацию</button>
                     </div>
                 </div>
             </div>
@@ -301,39 +301,43 @@
 
     <section class="footer-links">
         <ul>
-            <li><a href="">Внутренняя страница</a></li>
-            <li><a href="">Внутренняя страница</a></li>
-            <li><a href="">Внутренняя страница</a></li>
-            <li><a href="">Внутренняя страница</a></li>
-            <li><a href="">Внутренняя страница</a></li>
-            <li><a href="">Внутренняя страница</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="tarifs.html">Тарифы</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
         </ul>
     </section>
 
-    <!-- <div class="modal-overlay"></div>
-    <div class="modal">
-        <h1>Заказать звонок.</h1>
-        <span class="modal__info">Мы перезвоним Вам в течении 30 минут.</span>
-        <div class="checkbox__wrp">
-            <div>
-                <input type="checkbox" id="1">
-                <label for="1">Я хочу узнать условия сотрудничества</label>
+    <div class="modal-overlay"></div>
+    <div class="modal-wrp">
+        <div class="modal">
+            <svg class="modal__close" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="2.12109" width="3" height="35" rx="1.5" transform="rotate(-45 0 2.12109)"/>
+                <rect x="24.7488" width="3" height="35" rx="1.5" transform="rotate(45 24.7488 0)" />
+            </svg>
+            <h1>Заказать звонок.</h1>
+            <span class="modal__info">Мы перезвоним Вам в течении 30 минут.</span>
+            <div class="checkbox__wrp">
+                <div>
+                    <input type="checkbox" id="1">
+                    <label for="1">Я хочу узнать условия сотрудничества</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="2">
+                    <label for="2">Я хочу вызвать курьера</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="3">
+                    <label for="3">Я хочу получить информацию по моему заказуера</label>
+                </div>
             </div>
-            <div>
-                <input type="checkbox" id="2">
-                <label for="1">Я хочу вызвать курьера</label>
-            </div>
-            <div>
-                <input type="checkbox" id="3">
-                <label for="3">Я хочу получить информацию по моему заказуера</label>
-            </div>
+            <input class="input--short" type="text" placeholder="Имя">
+            <input class="input--short" type="text" placeholder="Телефон">
+            <input class="input--short" type="text" placeholder="E-mail">
+            <input class="input--short comment" type="text" placeholder="Ваш вопрос или комментарий">
+            <button class="btn-dark">Получить консультацию</button>
         </div>
-        <input class="input--short" type="text" placeholder="Имя">
-        <input class="input--short" type="text" placeholder="Телефон">
-        <input class="input--short" type="text" placeholder="E-mail">
-        <input class="input--short comment" type="text" placeholder="Ваш вопрос или комментарий">
-        <button class="btn-dark">Получить консультацию</button>
-    </div> -->
+    </div>
 
 </body>
 

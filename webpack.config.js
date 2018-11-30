@@ -18,7 +18,9 @@ module.exports = {
     entry: {
         index: path.join(dirApp, 'index'),
         service: path.join(__dirname, 'assets/services/services.js'),
-        tarifs: path.join(__dirname, 'assets/tarifs/tarifs.js')
+        tarifs: path.join(__dirname, 'assets/tarifs/tarifs.js'),
+        about: path.join(__dirname, 'assets/about/about.js'),
+        contacts: path.join(__dirname, 'assets/contacts/contacts.js')
     },
     resolve: {
         modules: [
@@ -53,6 +55,22 @@ module.exports = {
             inject: true,
             title: 'Tarifs',
             chunks: ['tarifs']
+        }),
+
+        new HtmlWebpackPlugin({
+            template: './assets/about/about.html',
+            filename: './about.html',
+            inject: true,
+            title: 'About us',
+            chunks: ['about', 'service']
+        }),
+
+        new HtmlWebpackPlugin({
+            template: './assets/contacts/contacts.html',
+            filename: './contacts.html',
+            inject: true,
+            title: 'Contacts',
+            chunks: ['contacts', 'service']
         }),
 
         new CopyWebpackPlugin([

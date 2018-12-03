@@ -22,10 +22,6 @@ h1 {
         border-radius: 20px;
         margin-top: 1em;
     }
-
-    .container > div {
-        margin-bottom: 3em;
-    }
 }
 
 .calc__forms {
@@ -39,6 +35,10 @@ h1 {
 
     .input--short {
         margin: 0 .5em;
+    }
+
+    input {
+        width: 12em;
     }
 }
 
@@ -58,6 +58,15 @@ h1 {
 
     &::placeholder {
         color: #B9C8D3;
+    }
+}
+
+.calc-wrp {
+    max-width: 83%;
+    margin: 0 auto;
+
+    > div {
+        margin-bottom: 3em;
     }
 }
 
@@ -122,11 +131,16 @@ h1 {
     }
 }
 
+.tarifs-table-wrp {
+    width: 100%;
+    overflow: scroll;
+}
+
 .tarifs__table {
     display: none;
     width: 100%;
 
-    &:nth-of-type(2) {
+    &:nth-of-type(1) {
         display: flex;
     }
 
@@ -135,6 +149,10 @@ h1 {
 
         &:nth-of-type(1) {
             flex: 3;
+
+            .col__name {
+                text-align: left;
+            }
         }
         &:nth-of-type(n+2) {
             flex: 1;

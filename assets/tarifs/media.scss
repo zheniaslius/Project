@@ -1,4 +1,8 @@
 @media screen and (max-width: 1500px) {
+    .input-group {
+        margin-bottom: 1em;
+    }
+
     .modal-wrp {
         max-width: 80%;
         width: 53em;
@@ -10,7 +14,12 @@
         max-width: unset;
     }
 
+    .calc-wrp {
+        max-width: 100%;
+    }
+
     .calc__forms .input--short {
+        width: 46%;
         margin: 0 .5em 1em 0;
     }
 
@@ -61,13 +70,15 @@
         }
     }
 
+    .tarifs-table-wrp {
+        margin-bottom: 2em;
+    }
+
     .tarifs__table .table__col {
         margin-right: 0.6em;
     }
 
     .table__col:first-of-type {
-        overflow: scroll;
-
         .col {
             width: max-content;
         }

@@ -49,51 +49,53 @@
     <section class="calc">
         <div class="container">
             <h1>Расчитать стоимость доставки.</h1>
-            <div class="calc__forms">
-                <div class="input-group">
-                    <span class="input__title">Населённый пункт</span>
-                    <div class="input--short__wrp">
-                        <input class="input--short" type="text" placeholder="Откуда">
-                        <input class="input--short" type="text" placeholder="Куда?">
+            <div class="calc-wrp">
+                <div class="calc__forms">
+                    <div class="input-group">
+                        <span class="input__title">Населённый пункт</span>
+                        <div class="input--short__wrp">
+                            <input class="input--short" type="text" placeholder="Откуда">
+                            <input class="input--short" type="text" placeholder="Куда?">
+                        </div>
                     </div>
-                </div>
-                <div class="input-group">
-                    <span class="input__title">Габариты, см.</span>
-                    <div class="input--short__wrp">
-                        <input class="input--short" type="text" placeholder="Высота">
-                        <input class="input--short" type="text" placeholder="Ширина">
-                        <input class="input--short" type="text" placeholder="Глубина">
+                    <div class="input-group size">
+                        <span class="input__title">Габариты, см.</span>
+                        <div class="input--short__wrp">
+                            <input class="input--short" type="text" placeholder="Высота">
+                            <input class="input--short" type="text" placeholder="Ширина">
+                            <input class="input--short" type="text" placeholder="Глубина">
+                        </div>
                     </div>
-                </div>
-                <div class="input-group">
-                    <span class="input__title">Вес, граммы</span>
-                    <div class="input--short__wrp">
-                        <input class="input--short" type="text" placeholder="Вес">
+                    <div class="input-group">
+                        <span class="input__title">Вес, граммы</span>
+                        <div class="input--short__wrp">
+                            <input class="input--short" type="text" placeholder="Вес">
+                        </div>
                     </div>
+                    <button class="btn-dark">Рассчитать</button>
                 </div>
-                <button class="btn-dark">Рассчитать</button>
-            </div>
-            <div class="calc__total">
-                <div class="input-group">
-                    <span class="input__title">Услуга</span>
-                    <div class="input--short__wrp">
-                        <div class="input--short blue-rounded">Наименование услуги №1</div>
-                        <div class="input--short blue-rounded">Наименование услуги №2</div>
+                <div class="calc__total">
+                    <div class="input-group">
+                        <span class="input__title">Услуга</span>
+                        <div class="input--short__wrp">
+                            <div class="input--short blue-rounded">Наименование услуги №1</div>
+                            <div class="input--short blue-rounded">Наименование услуги №2</div>
+                        </div>
                     </div>
-                </div>
-                <div class="input-group">
-                    <span class="input__title">Срок доставки</span>
-                    <div class="input--short__wrp">
-                        <div class="input--short blue-rounded">2-5 дня(ей)</div>
-                        <div class="input--short blue-rounded">14 дня(ей)</div>
+                    <div class="input-group">
+                        <span class="input__title">Срок доставки</span>
+                        <div class="input--short__wrp">
+                            <div class="input--short blue-rounded">2-5 дня(ей)</div>
+                            <div class="input--short blue-rounded">14 дня(ей)</div>
+                        </div>
                     </div>
-                </div>
-                <div class="input-group">
-                    <span class="input__title">Стоимость доставки</span>
-                    <div class="input--short__wrp">
-                        <div class="input--short blue-rounded">200 рублей</div>
-                        <div class="input--short blue-rounded">500 рублей</div>
-                        <button class="btn-dark get-info">Получить подробную консультацию</button>
+                    <div class="input-group">
+                        <span class="input__title">Стоимость доставки</span>
+                        <div class="input--short__wrp">
+                            <div class="input--short blue-rounded">200 рублей</div>
+                            <div class="input--short blue-rounded">500 рублей</div>
+                            <button class="btn-dark get-info">Получить подробную консультацию</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,145 +110,151 @@
                         <li class="nav__tab">Call - центр</li>
                     </ul>
                 </div>
-                <div class="tarifs__table fulfillment">
-                    <div class="table__col">
-                        <span class="col__name">Наименовение услуги</span>
-                        <ul class="col nav__wrp drop-shadow">
-                            <li class="nav__tab">Хранение</li>
-                            <li class="nav__tab">Хранение товара сутки</li>
-                            <li class="nav__tab">Хранение товара сутки</li>
-                            <li class="nav__tab">Обработка складом</li>
-                            <li class="nav__tab">Инвентаризация по требованию клиента (кроме годовой плановой)</li>
-                            <li class="nav__tab">Вложения (буклеты, листовки, гарантийные талоны, карточки и прочее)</li>
-                            <li class="nav__tab">Проверка товара на брак</li>
-                            <li class="nav__tab">Обработка возвратов (вскрытие, отбраковка, сортировка)</li>
-                            <li class="nav__tab">Приём / отгрузка товаров в заводской упаковке</li>
-                            <li class="nav__tab">Приём / отгрузка товаров не в заводской упаковке (обязательно)</li>
-                            <li class="nav__tab">Упаковка в чёрную стрейч - плёнку</li>
-                            <li class="nav__tab">Упаковка в белую стрейч - плёнку</li>
-                            <li class="nav__tab">Комплектация отправления (до 3-х вложений)</li>
-                        </ul>
+                <div class="tarifs-table-wrp">
+                    <div class="tarifs__table fulfillment">
+                        <div class="table__col">
+                            <span class="col__name">Наименовение услуги</span>
+                            <ul class="col nav__wrp drop-shadow">
+                                <li class="nav__tab">Хранение</li>
+                                <li class="nav__tab">Хранение товара сутки</li>
+                                <li class="nav__tab">Хранение товара сутки</li>
+                                <li class="nav__tab">Обработка складом</li>
+                                <li class="nav__tab">Инвентаризация по требованию клиента (кроме годовой плановой)</li>
+                                <li class="nav__tab">Вложения (буклеты, листовки, гарантийные талоны, карточки и
+                                    прочее)</li>
+                                <li class="nav__tab">Проверка товара на брак</li>
+                                <li class="nav__tab">Обработка возвратов (вскрытие, отбраковка, сортировка)</li>
+                                <li class="nav__tab">Приём / отгрузка товаров в заводской упаковке</li>
+                                <li class="nav__tab">Приём / отгрузка товаров не в заводской упаковке (обязательно)</li>
+                                <li class="nav__tab">Упаковка в чёрную стрейч - плёнку</li>
+                                <li class="nav__tab">Упаковка в белую стрейч - плёнку</li>
+                                <li class="nav__tab">Комплектация отправления (до 3-х вложений)</li>
+                            </ul>
+                        </div>
+                        <div class="table__col">
+                            <span class="col__name">Еденица измерения</span>
+                            <ul class="col nav__wrp drop-shadow">
+                                <li class="nav__tab">&#10240;</li>
+                                <li class="nav__tab">0.5 м³</li>
+                                <li class="nav__tab">1 м³</li>
+                                <li class="nav__tab">&#10240;</li>
+                                <li class="nav__tab">1 шт.</li>
+                                <li class="nav__tab">1 пос.</li>
+                                <li class="nav__tab">1 шт.</li>
+                                <li class="nav__tab">0.5 м³</li>
+                                <li class="nav__tab">1 м³</li>
+                                <li class="nav__tab">1 пос.</li>
+                                <li class="nav__tab">1 шт.</li>
+                                <li class="nav__tab">1 пос.</li>
+                                <li class="nav__tab">1 шт.</li>
+                            </ul>
+                        </div>
+                        <div class="table__col">
+                            <span class="col__name">Стоимость рублей</span>
+                            <ul class="col nav__wrp drop-shadow">
+                                <li class="nav__tab">&#10240;</li>
+                                <li class="nav__tab">15</li>
+                                <li class="nav__tab">25</li>
+                                <li class="nav__tab">&#10240;</li>
+                                <li class="nav__tab">1</li>
+                                <li class="nav__tab">2</li>
+                                <li class="nav__tab">7</li>
+                                <li class="nav__tab">25</li>
+                                <li class="nav__tab">бесплатно</li>
+                                <li class="nav__tab">2</li>
+                                <li class="nav__tab">?</li>
+                                <li class="nav__tab">?</li>
+                                <li class="nav__tab">от 70</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="table__col">
-                        <span class="col__name">Еденица измерения</span>
-                        <ul class="col nav__wrp drop-shadow">
-                            <li class="nav__tab">&#10240;</li>
-                            <li class="nav__tab">0.5 м³</li>
-                            <li class="nav__tab">1 м³</li>
-                            <li class="nav__tab">&#10240;</li>
-                            <li class="nav__tab">1 шт.</li>
-                            <li class="nav__tab">1 пос.</li>
-                            <li class="nav__tab">1 шт.</li>
-                            <li class="nav__tab">0.5 м³</li>
-                            <li class="nav__tab">1 м³</li>
-                            <li class="nav__tab">1 пос.</li>
-                            <li class="nav__tab">1 шт.</li>
-                            <li class="nav__tab">1 пос.</li>
-                            <li class="nav__tab">1 шт.</li>
-                        </ul>
+                    <div class="tarifs__table shipment">
+                        <div class="table__col">
+                            <span class="col__name">Наименовение услуги</span>
+                            <ul class="col nav__wrp drop-shadow">
+                                <li class="nav__tab">Забор товара и посылок в пределах МКАД</li>
+                                <li class="nav__tab">До 0,5 м³ и менее 15 посылок весом не более 4 кг.</li>
+                                <li class="nav__tab">От 0,5 м³ до 1 м³ и менее 15 посылок с общим весом не более 15 кг</li>
+                                <li class="nav__tab">Более 15 посылок с общим весом не более 15 кг. с общим весом не
+                                    более
+                                    50 кг. и общим объёмом не более 2,5 м³</li>
+                                <li class="nav__tab">Забор товара и посылок за МКАД от 0 до 5 км.</li>
+                                <li class="nav__tab">До 0,5 м³ и менее 15 посылок весом не более 4 кг.</li>
+                                <li class="nav__tab">От 0,5 м³ до 1 м³ и менее 15 посылок с общим весом не более 15 кг.</li>
+                                <li class="nav__tab">Более 15 посылок с общим весом не более 15 кг. с общим весом не
+                                    более
+                                    50 кг. и общим объёмом не более 2,5 м³</li>
+                                <li class="nav__tab">Забор товара и посылок за МКАД от 5 до 15 км.</li>
+                                <li class="nav__tab">До 0,5 м³ и менее 15 посылок весом не более 4 кг.</li>
+                                <li class="nav__tab">От 0,5 м³ до 1 м³ и менее 15 посылок с общим весом не более 15 кг.</li>
+                                <li class="nav__tab">Более 15 посылок с общим весом не более 15 кг. с общим весом не
+                                    более
+                                    50 кг. и общим объёмом не более 2,5 м³</li>
+                            </ul>
+                        </div>
+                        <div class="table__col">
+                            <span class="col__name">Стоимость рублей</span>
+                            <ul class="col nav__wrp drop-shadow">
+                                <li class="nav__tab">&#10240;</li>
+                                <li class="nav__tab">270</li>
+                                <li class="nav__tab">350</li>
+                                <li class="nav__tab">0</li>
+                                <li class="nav__tab">&#10240;</li>
+                                <li class="nav__tab">350</li>
+                                <li class="nav__tab">250</li>
+                                <li class="nav__tab">500</li>
+                                <li class="nav__tab">&#10240;</li>
+                                <li class="nav__tab">600</li>
+                                <li class="nav__tab">900</li>
+                                <li class="nav__tab">500</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="table__col">
-                        <span class="col__name">Стоимость рублей</span>
-                        <ul class="col nav__wrp drop-shadow">
-                            <li class="nav__tab">&#10240;</li>
-                            <li class="nav__tab">15</li>
-                            <li class="nav__tab">25</li>
-                            <li class="nav__tab">&#10240;</li>
-                            <li class="nav__tab">1</li>
-                            <li class="nav__tab">2</li>
-                            <li class="nav__tab">7</li>
-                            <li class="nav__tab">25</li>
-                            <li class="nav__tab">бесплатно</li>
-                            <li class="nav__tab">2</li>
-                            <li class="nav__tab">?</li>
-                            <li class="nav__tab">?</li>
-                            <li class="nav__tab">от 70</li>
-                        </ul>
+                    <div class="tarifs__table sms">
+                        <div class="table__col">
+                            <span class="col__name">Наименовение услуги</span>
+                            <ul class="col nav__wrp drop-shadow">
+                                <li class="nav__tab">Хранение</li>
+                                <li class="nav__tab">Хранение товара сутки</li>
+                            </ul>
+                        </div>
+                        <div class="table__col">
+                            <span class="col__name">Еденица измерения</span>
+                            <ul class="col nav__wrp drop-shadow">
+                                <li class="nav__tab">&#10240;</li>
+                                <li class="nav__tab">1 посылка <br>(4 СМС - 0,45)</li>
+                            </ul>
+                        </div>
+                        <div class="table__col">
+                            <span class="col__name">Стоимость рублей</span>
+                            <ul class="col nav__wrp drop-shadow">
+                                <li class="nav__tab">&#10240;</li>
+                                <li class="nav__tab">10</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="tarifs__table shipment">
-                    <div class="table__col">
-                        <span class="col__name">Наименовение услуги</span>
-                        <ul class="col nav__wrp drop-shadow">
-                            <li class="nav__tab">Забор товара и посылок в пределах МКАД</li>
-                            <li class="nav__tab">До 0,5 м³ и менее 15 посылок весом не более 4 кг.</li>
-                            <li class="nav__tab">От 0,5 м³ до 1 м³ и менее 15 посылок с общим весом не более 15 кг</li>
-                            <li class="nav__tab">Более 15 посылок с общим весом не более 15 кг. с общим весом не более
-                                50 кг. и общим объёмом не более 2,5 м³</li>
-                            <li class="nav__tab">Забор товара и посылок за МКАД от 0 до 5 км.</li>
-                            <li class="nav__tab">До 0,5 м³ и менее 15 посылок весом не более 4 кг.</li>
-                            <li class="nav__tab">От 0,5 м³ до 1 м³ и менее 15 посылок с общим весом не более 15 кг.</li>
-                            <li class="nav__tab">Более 15 посылок с общим весом не более 15 кг. с общим весом не более
-                                50 кг. и общим объёмом не более 2,5 м³</li>
-                            <li class="nav__tab">Забор товара и посылок за МКАД от 5 до 15 км.</li>
-                            <li class="nav__tab">До 0,5 м³ и менее 15 посылок весом не более 4 кг.</li>
-                            <li class="nav__tab">От 0,5 м³ до 1 м³ и менее 15 посылок с общим весом не более 15 кг.</li>
-                            <li class="nav__tab">Более 15 посылок с общим весом не более 15 кг. с общим весом не более
-                                50 кг. и общим объёмом не более 2,5 м³</li>
-                        </ul>
-                    </div>
-                    <div class="table__col">
-                        <span class="col__name">Стоимость рублей</span>
-                        <ul class="col nav__wrp drop-shadow">
-                            <li class="nav__tab">&#10240;</li>
-                            <li class="nav__tab">270</li>
-                            <li class="nav__tab">350</li>
-                            <li class="nav__tab">0</li>
-                            <li class="nav__tab">&#10240;</li>
-                            <li class="nav__tab">350</li>
-                            <li class="nav__tab">250</li>
-                            <li class="nav__tab">500</li>
-                            <li class="nav__tab">&#10240;</li>
-                            <li class="nav__tab">600</li>
-                            <li class="nav__tab">900</li>
-                            <li class="nav__tab">500</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tarifs__table sms">
-                    <div class="table__col">
-                        <span class="col__name">Наименовение услуги</span>
-                        <ul class="col nav__wrp drop-shadow">
-                            <li class="nav__tab">Хранение</li>
-                            <li class="nav__tab">Хранение товара сутки</li>
-                        </ul>
-                    </div>
-                    <div class="table__col">
-                        <span class="col__name">Еденица измерения</span>
-                        <ul class="col nav__wrp drop-shadow">
-                            <li class="nav__tab">&#10240;</li>
-                            <li class="nav__tab">1 посылка <br>(4 СМС - 0,45)</li>
-                        </ul>
-                    </div>
-                    <div class="table__col">
-                        <span class="col__name">Стоимость рублей</span>
-                        <ul class="col nav__wrp drop-shadow">
-                            <li class="nav__tab">&#10240;</li>
-                            <li class="nav__tab">10</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tarifs__table call">
-                    <div class="table__col">
-                        <span class="col__name">Наименовение услуги</span>
-                        <ul class="col nav__wrp drop-shadow">
-                            <li class="nav__tab">Отдел Call - центр</li>
-                            <li class="nav__tab">Прозвон на выкуп</li>
-                        </ul>
-                    </div>
-                    <div class="table__col">
-                        <span class="col__name">Еденица измерения</span>
-                        <ul class="col nav__wrp drop-shadow">
-                            <li class="nav__tab">&#10240;</li>
-                            <li class="nav__tab">1 посылка</li>
-                        </ul>
-                    </div>
-                    <div class="table__col">
-                        <span class="col__name">Стоимость рублей</span>
-                        <ul class="col nav__wrp drop-shadow">
-                            <li class="nav__tab">&#10240;</li>
-                            <li class="nav__tab">30</li>
-                        </ul>
+                    <div class="tarifs__table call">
+                        <div class="table__col">
+                            <span class="col__name">Наименовение услуги</span>
+                            <ul class="col nav__wrp drop-shadow">
+                                <li class="nav__tab">Отдел Call - центр</li>
+                                <li class="nav__tab">Прозвон на выкуп</li>
+                            </ul>
+                        </div>
+                        <div class="table__col">
+                            <span class="col__name">Еденица измерения</span>
+                            <ul class="col nav__wrp drop-shadow">
+                                <li class="nav__tab">&#10240;</li>
+                                <li class="nav__tab">1 посылка</li>
+                            </ul>
+                        </div>
+                        <div class="table__col">
+                            <span class="col__name">Стоимость рублей</span>
+                            <ul class="col nav__wrp drop-shadow">
+                                <li class="nav__tab">&#10240;</li>
+                                <li class="nav__tab">30</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -312,7 +320,7 @@
     <div class="modal-wrp">
         <div class="modal">
             <svg class="modal__close" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect y="2.12109" width="3" height="35" rx="1.5" transform="rotate(-45 0 2.12109)"/>
+                <rect y="2.12109" width="3" height="35" rx="1.5" transform="rotate(-45 0 2.12109)" />
                 <rect x="24.7488" width="3" height="35" rx="1.5" transform="rotate(45 24.7488 0)" />
             </svg>
             <h1>Заказать звонок.</h1>

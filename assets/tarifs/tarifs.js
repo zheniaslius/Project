@@ -6,6 +6,9 @@ import './media.scss'
 
 import '../js/hamburger.js'
 
+document.addEventListener("DOMContentLoaded", () => {
+
+
 const nav = document.querySelector('.nav__wrp')
 const tables = [...document.querySelectorAll('.tarifs__table')]
 
@@ -45,3 +48,5 @@ const handleModal = () => {
 call.addEventListener('click', handleModal)
 getInfo.addEventListener('click', handleModal)
 close.addEventListener('click', closeModal)
+
+})

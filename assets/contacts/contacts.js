@@ -3,6 +3,9 @@ import '../about/media.scss'
 import './styles.scss'
 import './media.scss'
 
+document.addEventListener("DOMContentLoaded", () => {
+
+
 const call = document.querySelector('.call')
 const close = document.querySelector('.modal__close')
 const modal = document.querySelector('.modal-wrp')
@@ -20,3 +23,5 @@ const handleModal = () => {
 
 call.addEventListener('click', handleModal)
 close.addEventListener('click', closeModal)
+
+})

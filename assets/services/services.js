@@ -8,6 +8,9 @@ import '../js/hamburger.js';
 
 import Glide from '@glidejs/glide'
 
+document.addEventListener("DOMContentLoaded", () => {
+
+
 const glide = new Glide('.glide', {
     gap: 0,
     perView: 3,
@@ -47,3 +50,5 @@ const handleModal = () => {
 
 call.addEventListener('click', handleModal)
 close.addEventListener('click', closeModal)
+
+})

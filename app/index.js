@@ -11,6 +11,9 @@ import 'reset-css';
 import 'styles/index.scss';
 import 'js/hamburger.js';
 
+
+document.addEventListener("DOMContentLoaded", () => {
+
 //Modal 
 const call = document.querySelector('.call')
 const getInfo = document.querySelector('.hero .btn')
@@ -156,3 +159,5 @@ launch
     })
 
 document.querySelector('.btn-join').onclick = launch.play;
+
+})

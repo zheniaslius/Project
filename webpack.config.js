@@ -36,7 +36,7 @@ module.exports = {
 
         new HtmlWebpackPlugin({
             template: './index.html',
-            inject: true,
+            inject: 'head',
             filename: 'index.html',
             chunks: ['index']
         }),
@@ -44,7 +44,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './assets/services/services.html',
             filename: './services.html',
-            inject: true,
+            inject: 'head',
             title: 'Services',
             chunks: ['service']
         }),
@@ -52,7 +52,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './assets/tarifs/tarifs.html',
             filename: './tarifs.html',
-            inject: true,
+            inject: 'head',
             title: 'Tarifs',
             chunks: ['tarifs']
         }),
@@ -60,7 +60,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './assets/about/about.html',
             filename: './about.html',
-            inject: true,
+            inject: 'head',
             title: 'About us',
             chunks: ['about', 'service']
         }),
@@ -68,7 +68,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './assets/contacts/contacts.html',
             filename: './contacts.html',
-            inject: true,
+            inject: 'head',
             title: 'Contacts',
             chunks: ['contacts', 'service']
         }),

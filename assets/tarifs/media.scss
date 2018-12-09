@@ -2,11 +2,6 @@
     .input-group {
         margin-bottom: 1em;
     }
-
-    .modal-wrp {
-        max-width: 80%;
-        width: 53em;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -25,41 +20,6 @@
 
     .input-group {
         align-items: flex-start;
-    }
-
-    .modal-wrp {
-        max-width: 100%;
-        overflow-y: scroll;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        transform: none;
-    }
-
-    .modal {
-        text-align: center;
-        padding: 6% 14%;
-        height: unset;
-
-        & > * {
-            margin-bottom: 2em;
-        }
-
-        h1 {
-            margin-bottom: 1em;
-        }
-
-        &__close {
-            transform: translateX(-100%);
-            fill: black;
-            position: static;
-        }
-    }
-
-    .checkbox__wrp {
-        text-align: left;
     }
 
     .tarifs {

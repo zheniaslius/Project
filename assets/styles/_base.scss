@@ -1,6 +1,7 @@
 $dark-blue: #0E4367;
 
 header {
+    z-index: 1;
     height: 95vh;
     background: linear-gradient(180deg, #001741 0%, #2FA9C0 100%);
     color: white;

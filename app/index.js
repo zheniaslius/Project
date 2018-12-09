@@ -11,6 +11,27 @@ import 'reset-css';
 import 'styles/index.scss';
 import 'js/hamburger.js';
 
+//Modal 
+const call = document.querySelector('.call')
+const getInfo = document.querySelector('.hero .btn')
+const close = document.querySelector('.modal__close')
+const modal = document.querySelector('.modal-wrp')
+const modalOverlay = document.querySelector('.modal-overlay')
+
+const closeModal = () => {
+    modal.classList.toggle('visible')
+    modalOverlay.classList.toggle('visible')
+}
+
+const handleModal = () => {
+    modal.classList.toggle('visible')
+    modalOverlay.classList.toggle('visible')
+}
+
+getInfo.addEventListener('click', handleModal)
+call.addEventListener('click', handleModal)
+close.addEventListener('click', closeModal)
+
 //Scroll
 const scroll = new SmoothScroll('a[href*="#join"]', {
     speed: 1600

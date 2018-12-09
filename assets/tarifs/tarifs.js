@@ -26,6 +26,7 @@ const handleMenu = (e) => {
 
 nav.addEventListener('click', handleMenu)
 
+const call = document.querySelector('.call')
 const getInfo = document.querySelector('.get-info')
 const close = document.querySelector('.modal__close')
 const modal = document.querySelector('.modal-wrp')
@@ -41,5 +42,6 @@ const handleModal = () => {
     modalOverlay.classList.toggle('visible')
 }
 
+call.addEventListener('click', handleModal)
 getInfo.addEventListener('click', handleModal)
 close.addEventListener('click', closeModal)

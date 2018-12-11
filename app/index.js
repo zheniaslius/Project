@@ -6,6 +6,7 @@
 import anime from 'animejs';
 import inView from 'in-view';
 import SmoothScroll from 'smooth-scroll';
+import Typed from 'typed.js';
 
 import 'reset-css';
 import 'styles/index.scss';
@@ -34,6 +35,12 @@ const handleModal = () => {
 getInfo.addEventListener('click', handleModal)
 call.addEventListener('click', handleModal)
 close.addEventListener('click', closeModal)
+
+const typed = new Typed('.hero__capt', {
+    strings: ['Маштабирование Вашего бизнеса'],
+    typeSpeed: 30,
+    showCursor: false
+});
 
 //Scroll
 const scroll = new SmoothScroll('a[href*="#join"]', {
@@ -73,7 +80,23 @@ const numbersAnim = anime({
 })
 
 inView('.results__wrp')
-    .on('enter', () =>  numbersAnim.play());
+    .on('enter', () => numbersAnim.play());
+
+
+//Services
+const services = anime({
+    targets: '.service',
+    opacity: [0, 1],
+    translateX: [-30, 0],
+    delay: function(el, i, l) {
+        return i * 200;
+    },
+    easing: 'easeOutQuad',
+    autoplay: false
+})
+
+inView('.services__wrp')
+    .on('enter', () => services.play());
 
 
 //Price comparison

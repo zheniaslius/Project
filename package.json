@@ -25,7 +25,8 @@
     "npm": "^6.4.1",
     "reset-css": "^4.0.1",
     "smooth-scroll": "^15.0.0",
-    "svg-url-loader": "^2.3.2"
+    "svg-url-loader": "^2.3.2",
+    "typed.js": "^2.0.9"
   },
   "devDependencies": {
     "@babel/core": "7.1.2",

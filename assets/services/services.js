@@ -5,12 +5,11 @@ import './media.scss'
 
 import '../js/hamburger.js';
 
-
+import anime from 'animejs';
 import Glide from '@glidejs/glide'
 
 document.addEventListener("DOMContentLoaded", () => {
-
-
+    
 const glide = new Glide('.glide', {
     gap: 0,
     perView: 3,
@@ -50,5 +49,22 @@ const handleModal = () => {
 
 call.addEventListener('click', handleModal)
 close.addEventListener('click', closeModal)
+
+//Animations 
+const img = anime({
+    targets: '.feature__img',
+    scale: [.95, 1],
+    easing: 'easeOutSine'
+})
+
+const icons = anime({
+    targets: '.icons-wrapper .icon',
+    opacity: [0, 1],
+    translateX: [-30, 0],
+    delay: function(el, i, l) {
+        return i * 100;
+    },
+    easing: 'easeOutSine'
+})
 
 })

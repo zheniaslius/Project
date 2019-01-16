@@ -7,6 +7,10 @@
 @media screen and (max-width: 600px) {
     .heading {
         max-width: unset;
+
+        &__front {
+            top: 0;
+        }
     }
 
     .calc-wrp {

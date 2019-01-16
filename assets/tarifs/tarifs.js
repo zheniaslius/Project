@@ -4,10 +4,10 @@ import '../services/styles.scss'
 import './styles.scss'
 import './media.scss'
 
+import '../js/modal.js'
 import '../js/hamburger.js'
 
 document.addEventListener("DOMContentLoaded", () => {
-
 
 const nav = document.querySelector('.nav__wrp')
 const tables = [...document.querySelectorAll('.tarifs__table')]
@@ -28,25 +28,5 @@ const handleMenu = (e) => {
 }
 
 nav.addEventListener('click', handleMenu)
-
-const call = document.querySelector('.call')
-const getInfo = document.querySelector('.get-info')
-const close = document.querySelector('.modal__close')
-const modal = document.querySelector('.modal-wrp')
-const modalOverlay = document.querySelector('.modal-overlay')
-
-const closeModal = () => {
-    modal.classList.toggle('visible')
-    modalOverlay.classList.toggle('visible')
-}
-
-const handleModal = () => {
-    modal.classList.toggle('visible')
-    modalOverlay.classList.toggle('visible')
-}
-
-call.addEventListener('click', handleModal)
-getInfo.addEventListener('click', handleModal)
-close.addEventListener('click', closeModal)
 
 })

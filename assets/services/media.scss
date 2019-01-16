@@ -48,12 +48,17 @@ $hamburger-layer-color: #0E4367 !default;
         max-width: 90%;
 
         &__text {
-            margin-top: 0;
+            margin-top: 2em;
+            text-align: center;
+        }
+
+        &__front {
+            top: 0;
         }
     }
 
     .feature__img {
-        width: 100%;
+        width: 100% !important;
     }
 
     .glide__slide {

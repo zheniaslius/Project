@@ -2,15 +2,20 @@ import 'reset-css'
 import '../styles/index.scss'
 import './styles.scss'
 import './media.scss'
+import '../js/hamburger.js'
+import '../js/modal'
 
-import '../js/hamburger.js';
-
-import anime from 'animejs';
 import Glide from '@glidejs/glide'
+import anime from 'animejs'
+import {animate} from './anim'
+import inView from 'in-view'
+
+animate()
 
 document.addEventListener("DOMContentLoaded", () => {
     
 const glide = new Glide('.glide', {
+    type: 'carousel',
     gap: 0,
     perView: 3,
     focusAt: 'center',
@@ -32,39 +37,26 @@ const toShow = i => {
 
 glide.on('move', () => toShow(glide.index))
 
-const call = document.querySelector('.call')
-const close = document.querySelector('.modal__close')
-const modal = document.querySelector('.modal-wrp')
-const modalOverlay = document.querySelector('.modal-overlay')
+// Image animations
 
-const closeModal = () => {
-    modal.classList.toggle('visible')
-    modalOverlay.classList.toggle('visible')
-}
-
-const handleModal = () => {
-    modal.classList.toggle('visible')
-    modalOverlay.classList.toggle('visible')
-}
-
-call.addEventListener('click', handleModal)
-close.addEventListener('click', closeModal)
-
-//Animations 
-const img = anime({
-    targets: '.feature__img',
-    scale: [.95, 1],
-    easing: 'easeOutSine'
+anime({
+    targets: 'svg.agregator g#Layer_2, svg.call g#Layer_2',
+    translateY: -10,
+    direction: 'alternate',
+    duration: 800,
+    loop: true,
+    easing: 'linear'
 })
 
-const icons = anime({
-    targets: '.icons-wrapper .icon',
-    opacity: [0, 1],
-    translateX: [-30, 0],
-    delay: function(el, i, l) {
-        return i * 100;
-    },
-    easing: 'easeOutSine'
-})
+inView('.dostavka')
+        .on('enter', () =>{
+            anime({
+                targets: 'svg.dostavka g#Layer_2',
+                translateX: 300,
+                translateY: -100,
+                duration: 8000,
+                easing: 'easeInOutQuad'
+            })
+        });
 
 })

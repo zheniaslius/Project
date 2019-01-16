@@ -151,6 +151,10 @@
 }
 
 @media screen and (max-width: 700px) {    
+    .map-marker {
+        display: none;
+    }
+
     .price {
         img {
             width: 90vw;
@@ -190,6 +194,11 @@
             align-self: center;
             margin: 0;
         }
+    }
+
+    .heading__text {
+        margin: 2em 0 0 0;
+        text-align: center;
     }
 
     .heading__back {

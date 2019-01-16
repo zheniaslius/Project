@@ -1,11 +1,16 @@
 @media screen and (max-width: 800px) {
     .heading__text {
-        max-width: 70%;
+        max-width: 90%;
     }
 }
 
 @media screen and (max-width: 800px) {
+    .heading__front {
+        top: 0%;
+    }
+
     .heading__text {
-        max-width: 90%;
+        margin-top: 2em;
+        text-align: center;
     }
 }
